@@ -129,6 +129,38 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
+/* Sección Sobre Nosotros */
+.about {
+    padding: 60px 0;
+    background-color: var(--blanco);
+    text-align: center;
+}
+
+.about h2 {
+    color: var(--azul-oscuro);
+    font-size: 2.3rem;
+    margin-bottom: 25px;
+}
+
+.about-description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--negro);
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 1.8rem;
+    }
+    
+    .about-description {
+        font-size: 1rem;
+    }
+}
+
 /* Servicios */
 .servicios {
     padding: 80px 0;
@@ -156,6 +188,7 @@ nav ul li a:hover {
     transition: transform 0.3s ease;
     padding: 30px;
     text-align: center;
+    cursor: pointer;
 }
 
 .servicio-card:hover {
@@ -172,6 +205,65 @@ nav ul li a:hover {
     font-size: 1.5rem;
     margin-bottom: 15px;
     color: var(--azul-oscuro);
+}
+
+/* Estilos para los modales */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--blanco);
+    padding: 30px;
+    border-radius: 8px;
+    z-index: 1001;
+    max-width: 600px;
+    width: 90%;
+    display: none;
+}
+
+.modal-content {
+    position: relative;
+    text-align: justify;
+}
+
+.close-modal {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--azul-oscuro);
+}
+
+.modal-body {
+    padding: 20px 0;
+}
+
+.modal-body li{
+    margin-left: 15px;
+}
+
+.modal.active,
+.modal-overlay.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .modal {
+        padding: 20px;
+    }
 }
 
 /* Footer */
