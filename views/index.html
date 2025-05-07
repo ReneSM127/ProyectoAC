@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abogados Cancún - Servicios Legales</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
@@ -31,7 +32,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" data-aos="fade-down">
         <div class="hero-content">
             <h2>Expertos en Soluciones Legales en Cancún</h2>
             <p>Asesoría jurídica personalizada para proteger tus derechos</p>
@@ -40,7 +41,7 @@
     </section>
 
     <!-- Sección Sobre Nosotros -->
-    <section class="about">
+    <section class="about" data-aos="fade-down" data-aos-once="true">
         <div class="container">
             <h2>Despacho Jurídico en Cancún</h2>
             <p class="about-description">
@@ -55,12 +56,12 @@
 
 
     <!-- Servicios Section -->
-    <section id="servicios" class="servicios">
+    <section id="servicios" class="servicios" data-aos="fade-down">
         <div class="container">
             <h2>Nuestros Servicios Legales</h2>
             <div class="servicios-grid">
                 <!-- Servicio 1 -->
-                <div class="servicio-card">
+                <div class="servicio-card" data-aos="flip-right">
                     <div class="servicio-icon">
                         <i class="fas fa-file-alt"></i>
                     </div>
@@ -86,7 +87,7 @@
                 </div>
 
                 <!-- Servicio 2 -->
-                <div class="servicio-card">
+                <div class="servicio-card" data-aos="flip-right">
                     <div class="servicio-icon">
                         <i class="fas fa-search"></i>
                     </div>
@@ -116,7 +117,7 @@
 
 
                 <!-- Servicio 4 -->
-                <div class="servicio-card">
+                <div class="servicio-card" data-aos="flip-right">
                     <div class="servicio-icon">
                         <i class="fas fa-baby"></i>
                     </div>
@@ -148,7 +149,7 @@
                 </div>
 
                 <!-- Servicio 5 -->
-                <div class="servicio-card">
+                <div class="servicio-card" data-aos="flip-right">
                     <div class="servicio-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
@@ -183,7 +184,7 @@
                 </div>
 
                 <!-- Servicio 6 -->
-                <div class="servicio-card">
+                <div class="servicio-card" data-aos="flip-right">
                     <div class="servicio-icon">
                         <i class="fas fa-gavel"></i>
                     </div>
@@ -211,7 +212,7 @@
                 </div>
 
                 <!-- Servicio 7 -->
-                <div class="servicio-card">
+                <div class="servicio-card" data-aos="flip-right">
                     <div class="servicio-icon">
                         <i class="fas fa-calculator"></i>
                     </div>
@@ -220,7 +221,7 @@
                 </div>
 
                 <!-- Servicio 8 -->
-                <div class="servicio-card">
+                <div class="servicio-card" data-aos="flip-right">
                     <div class="servicio-icon">
                         <i class="fas fa-building"></i>
                     </div>
@@ -244,7 +245,7 @@
                 </div>
 
                 <!-- Servicio 9 -->
-                <div class="servicio-card">
+                <div class="servicio-card" data-aos="flip-right">
                     <div class="servicio-icon">
                         <i class="fas fa-file-signature"></i>
                     </div>
@@ -272,7 +273,7 @@
                 </div>
 
                 <!-- Servicio 10 -->
-                <div class="servicio-card">
+                <div class="servicio-card" data-aos="flip-right">
                     <div class="servicio-icon">
                         <i class="fas fa-paw"></i>
                     </div>
@@ -299,7 +300,7 @@
                 </div>
 
                 <!-- Servicio 11 - Registros de Marcas -->
-                <div class="servicio-card">
+                <div class="servicio-card" data-aos="flip-right">
                     <div class="servicio-icon">
                         <i class="fas fa-trademark"></i>
                     </div>
@@ -324,7 +325,7 @@
                 </div>
 
                 <!-- Servicio 12 - Citas para Pasaportes -->
-                <div class="servicio-card">
+                <div class="servicio-card" data-aos="flip-right">
                     <div class="servicio-icon">
                         <i class="fas fa-passport"></i>
                     </div>
@@ -371,10 +372,6 @@
         </div>
     </div>
 
-    <!-- Repite este bloque con diferentes IDs y contenido para cada servicio -->
-    <div class="modal" id="modal2">
-        <!-- Contenido para el segundo servicio -->
-    </div>
 
     <!-- Footer -->
     <footer>
@@ -439,6 +436,10 @@
     </a>
 
     <script src="../scripts/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 
